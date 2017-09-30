@@ -18,5 +18,6 @@ def downlaod_image(url, save_root=".", verbose=False):
     save_path = os.path.join(save_root, img_name)
     f = open(save_path, 'wb')
     f.write(response.content)
-    print("downloaded {}".format(img_name))
+    if verbose:
+        print("downloaded {}".format(img_name))
     
