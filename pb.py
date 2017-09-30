@@ -1,3 +1,6 @@
+"""
+clipboad read/write
+"""
 from subprocess import Popen
 
 def read():
