@@ -1,4 +1,12 @@
 class SpaceUnits(object):
+    """
+    An iterator over the space of the hidden units Multi Layer Perceptron.
+    This iterator yeilds, 
+
+    (1,), (2,), (3,), ..., (max_n_unit,)
+    (1,1,), (1,2,), (1,3,), ..., (2,1,), ...
+    ..., (max_n_unit for layer in max_n_layer)
+    """
     def __init__(self, max_n_layer, max_n_unit):
         self.max_n_layer = max_n_layer
         self.max_n_unit = max_n_unit
